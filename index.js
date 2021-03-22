@@ -24,22 +24,7 @@ class SecretsManagerClient {
     }
 
     async getSecret(secretName) {
-        // let result = 'hello';
         const result = await this.client.getSecretValue({SecretId: secretName}).promise();
-        //     , (err, data) => {
-        //     console.log('In callback');
-        //     if (err) {
-        //         throw new Error(`Error fetching secret: ${err.code} ${err.message}`);
-        //     }
-        //     else {
-        //         if ('SecretString' in data) {
-        //             console.log(data.SecretString);
-        //             result = JSON.parse(data.SecretString);
-        //         } else {
-        //             throw new Error(`Secret not found (binary): "${secretName}"`);
-        //         }
-        //     }
-        // });
         if (!result || !result.SecretString) {
             throw new Error(`Secret not found: "${secretName}"`);
         }
