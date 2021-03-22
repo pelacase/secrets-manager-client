@@ -1,0 +1,17 @@
+{
+  "name": "secrets-manager-client",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A thin wrapper for the AWS Secrets Manager client with OMD conventions",
+  "main": "index.js",
+  "repository": "git@github.com:pelacase/secrets-manager-client.git",
+  "author": "Chris Worman <chris.worman@pelacase.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.869.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
