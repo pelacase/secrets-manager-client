@@ -1,6 +1,7 @@
 {
   "name": "secrets-manager-client",
   "type": "module",
+  "typings": "index.d.ts",
   "version": "1.0.0",
   "description": "A thin wrapper for the AWS Secrets Manager client with OMD conventions",
   "main": "index.js",

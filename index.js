@@ -18,11 +18,6 @@ class SecretsManagerClient {
         return await this.getSecret(secretName);
     }
 
-    async getShopifyStorefrontApiSecret(shopName, privateAppName=DEFAULT_PRIVATE_APP_NAME) {
-        const secretName = `shopify/${shopName}/storefrontApi/${formatPrivateAppName(privateAppName)}`;
-        return await this.getSecret(secretName);
-    }
-
     async getSecret(secretName) {
         const result = await this.client.getSecretValue({SecretId: secretName}).promise();
         if (!result || !result.SecretString) {
