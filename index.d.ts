@@ -1,10 +1,16 @@
-export declare interface ShopifyAdminApiSecret {
+export as namespace 'secrets-manager-client';
+
+export = ShopifyAdminApiSecret;
+
+declare interface ShopifyAdminApiSecret {
     apiKey: string;
     password: string;
     shopName: string;
 }
 
-export declare class SecretsManagerClient {
+export = SecretsManagerClient;
+
+declare class SecretsManagerClient {
     /**
      * Construct a new secrets manager client using the specified AWS credentials.
      */
