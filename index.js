@@ -1,4 +1,4 @@
-import AWS from 'aws-sdk';
+const AWS = require('aws-sdk');
 
 const DEFAULT_PRIVATE_APP_NAME = 'Pela Headless Website';
 
