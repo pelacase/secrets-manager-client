@@ -27,4 +27,4 @@ class SecretsManagerClient {
     }
 }
 
-export default SecretsManagerClient;
+module.exports = SecretsManagerClient;
